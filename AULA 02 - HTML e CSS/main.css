@@ -1,0 +1,23 @@
+@charset "UTF-8";
+
+*{
+    margin: auto;
+    font-family: 'Courier New', Courier, monospace;
+    background-color: beige;
+}
+form{
+    width: 50%;
+}
+.rodape{
+    background-color: rgba(0, 0, 0, 0.473);
+}
+footer p{
+    text-decoration: none;
+    color: black;
+}
+a:hover{
+    pointer-events: fill;
+}
+h2{
+    margin: auto;
+}
