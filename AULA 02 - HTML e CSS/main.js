@@ -1,11 +1,12 @@
-function mascara(src,mask){
-    var i = src.value.length
-    var saida = mask.substring(0,1)
-    var texto = mask.substring(i)
-    if (texto.substring(0,1) != saida){
-        src.value += texto.substring(0,1)
-    }
-}
+//Não funcionou para telefone - Devido o parenteses - Funciona para outras mascaras
+//function mascara(src,mask){
+//    var i = src.value.length
+//    var saida = mask.substring(0,1)
+//    var texto = mask.substring(i)
+//    if (texto.substring(0,1) != saida){
+//        src.value += texto.substring(0,1)
+//    }
+//}
 function mascara2(telefone, evento) {
   var tecla = (!evento) ? window.event.keyCode : evento.which;
   var valor = telefone.value.replace(/\D/g, '');
@@ -61,7 +62,7 @@ function countDigits(tel) {
   if (tam ==11){
     console.log("É celular");
     desabilita.disabled = false;
-  }else if(tam ==10){
+  }else if(tam !=11){
     console.log("Não é celular")
     desabilita.disabled = true;
     alert("Por favor informe um numero de celular"); console.log(tam);
