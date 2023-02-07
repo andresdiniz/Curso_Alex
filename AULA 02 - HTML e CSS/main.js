@@ -54,13 +54,16 @@ function mascara2(telefone, evento) {
 
 function countDigits(tel) {
     var digits = tel.toString().replace(/\D/g, "");
+    var desabilita = document.getElementById("desabilitar");
     var tam = ''
     tam = digits.length;
     console.log(tel);
   if (tam ==11){
-    console.log("É celular")
+    console.log("É celular");
+    desabilita.disabled = false;
   }else if(tam ==10){
     console.log("Não é celular")
+    desabilita.disabled = true;
     alert("Por favor informe um numero de celular"); console.log(tam);
 }
 }
