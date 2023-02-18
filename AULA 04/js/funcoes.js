@@ -1,5 +1,4 @@
 function VerificaForm(){
-    alert('VC CLICOU');
     const senha = document.getElementById('exampleFormControlTextarea1');
     const email = document.getElementById('exampleFormControlInput1');
     const emailvalor = email.value;
